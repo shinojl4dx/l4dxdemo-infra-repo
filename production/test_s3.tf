@@ -1,7 +1,7 @@
 data "aws_caller_identity" "current" {}
 
 resource "aws_s3_bucket" "pipeline_test" {
-  bucket        = "l4dxdemo-production-${data.aws_caller_identity.current.account_id}"
+  bucket_prefix = "l4dxdemo-production-test-"
   force_destroy = true
 
   tags = {
