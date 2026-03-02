@@ -5,7 +5,8 @@ resource "aws_s3_bucket" "pipeline_test" {
   force_destroy = true
 
   tags = {
-    Name = "l4dxdemo-security-pipeline-test"
+    Name        = "l4dxdemo-security-pipeline-test"
+    TriggerNote = "retrigger-after-secret"
   }
 }
 
@@ -25,4 +26,3 @@ resource "aws_s3_bucket_public_access_block" "pipeline_test" {
   ignore_public_acls      = true
   restrict_public_buckets = true
 }
-
