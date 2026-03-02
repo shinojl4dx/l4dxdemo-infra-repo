@@ -6,7 +6,7 @@ resource "aws_s3_bucket" "pipeline_test" {
 
   tags = {
     Name        = "l4dxdemo-network-pipeline-test"
-    TriggerNote = "retrigger-after-secret"
+    TriggerNote = "retrigger-final-validation"
   }
 }
 
