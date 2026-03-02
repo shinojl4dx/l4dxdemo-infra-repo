@@ -17,7 +17,7 @@ env:
   AWS_REGION: ap-south-1
   TF_BUCKET: tf-state-58769155
   TF_LOCK_TABLE: arn:aws:dynamodb:ap-south-1:144711568538:table/tf-statelock-b7510b04
-  TF_KMS_KEY_ID: c640d35c-5e60-4acd-86cf-b407be13db06
+  TF_KMS_KEY_ID: arn:aws:kms:ap-south-1:144711568538:key/c640d35c-5e60-4acd-86cf-b407be13db06
   TF_STATE_KEY: production/terraform.tfstate
 
 jobs:
