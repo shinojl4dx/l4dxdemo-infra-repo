@@ -5,7 +5,8 @@ resource "aws_s3_bucket" "pipeline_test" {
   force_destroy = true
 
   tags = {
-    Name = "l4dxdemo-devops-pipeline-test"
+    Name        = "l4dxdemo-devops-pipeline-test"
+    TriggerNote = "retrigger-after-secret"
   }
 }
 
