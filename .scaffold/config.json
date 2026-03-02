@@ -6,7 +6,7 @@
     "s3_bucket": "tf-state-58769155",
     "dynamodb_table": "tf-statelock-b7510b04",
     "kms_key_id": "c640d35c-5e60-4acd-86cf-b407be13db06",
-    "created_at": "2026-03-02T16:13:36Z",
+    "created_at": "2026-03-02T16:34:38Z",
     "created_by": ""
   },
   "repository": {
@@ -24,6 +24,42 @@
       "iam_role_arn": "arn:aws:iam::144711568538:role/github-actions-devops",
       "state_key": "devops/terraform.tfstate",
       "workflow_file": ".github/workflows/terraform-devops.yaml",
+      "created_at": "",
+      "policy_mode": "inline"
+    },
+    {
+      "name": "network",
+      "account_id": "278891233848",
+      "region": "ap-south-1",
+      "watch_directory": "network",
+      "trigger_branch": "main",
+      "iam_role_arn": "arn:aws:iam::278891233848:role/github-actions-network",
+      "state_key": "network/terraform.tfstate",
+      "workflow_file": ".github/workflows/terraform-network.yaml",
+      "created_at": "",
+      "policy_mode": "inline"
+    },
+    {
+      "name": "production",
+      "account_id": "696192989304",
+      "region": "ap-south-1",
+      "watch_directory": "production",
+      "trigger_branch": "main",
+      "iam_role_arn": "arn:aws:iam::696192989304:role/github-actions-production",
+      "state_key": "production/terraform.tfstate",
+      "workflow_file": ".github/workflows/terraform-production.yaml",
+      "created_at": "",
+      "policy_mode": "inline"
+    },
+    {
+      "name": "security",
+      "account_id": "102493261417",
+      "region": "ap-south-1",
+      "watch_directory": "security",
+      "trigger_branch": "main",
+      "iam_role_arn": "arn:aws:iam::102493261417:role/github-actions-security",
+      "state_key": "security/terraform.tfstate",
+      "workflow_file": ".github/workflows/terraform-security.yaml",
       "created_at": "",
       "policy_mode": "inline"
     }
