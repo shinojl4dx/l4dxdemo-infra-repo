@@ -23,6 +23,11 @@ provider "aws" {
   }
 }
 
+provider "aws" {
+  alias  = "security"
+  region = var.aws_region
+}
+
 variable "aws_region" {
   description = "AWS region for resources"
   type        = string
