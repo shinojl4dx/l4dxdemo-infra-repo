@@ -4,3 +4,7 @@ variable "aws_region" {
   default     = "ap-south-1"
 }
 
+variable "alert_email" {
+  description = "Email address to receive AWS Backup alerts"
+  type        = string
+}

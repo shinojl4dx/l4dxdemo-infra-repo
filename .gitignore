@@ -34,3 +34,4 @@ Thumbs.db
 
 # inventory.json is intentionally committed (source of truth)
 # Do NOT add inventory.json here
+infra/backup/lambda_backup_tagger.zip
